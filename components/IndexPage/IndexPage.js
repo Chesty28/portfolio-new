@@ -1,13 +1,14 @@
 import React from 'react';
 
+import Navbar from '../../UI/Navbar/Navbar';
+import Copyright from '../../UI/Copyright/Copyright';
+
 import s from './IndexPage.module.css';
 
 const IndexPage = () => {
 	return (
 		<div>
-			<nav className={s.navbar}>
-				<ul></ul>
-			</nav>
+            <Navbar />
 			<h1 className={s.header}>
 				<span className={[s.span, s.an1].join(' ')}>H</span>
                 <span className={[s.span, s.an2].join(' ')}>i</span>
@@ -30,6 +31,7 @@ const IndexPage = () => {
                 <span className={[s.span, s.an1].join(' ')}>a</span>
 			</h1>
             <p className={s.logo}>P</p>
+            <Copyright />
 		</div>
 	);
 };
