@@ -7,7 +7,7 @@ import s from './IndexPage.module.css';
 
 const IndexPage = () => {
 	return (
-		<div>
+		<div className={s.indexPage}>
             <Navbar />
 			<h1 className={s.header}>
 				<span className={[s.span, s.an1].join(' ')}>H</span>

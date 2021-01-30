@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Context} from '../../context/context';
 import { BsPerson, BsCodeSlash, BsChatSquareDots } from 'react-icons/bs';
 import { CgWebsite } from 'react-icons/cg';
 
@@ -10,12 +11,15 @@ const Navbar = () => {
     const [projectsHover, setProjectsHover] = useState(false);
     const [contactHover, setContactHover] = useState(false);
 
+    const context = useContext(Context);
+
     return (
         <nav className={s.navbar}>
 				<ul className={s.navbar__list}>
                     <li className={s.navbar__list__item}
                         onMouseEnter={() => setMeHover(true)}
                         onMouseLeave={() => setMeHover(false)}
+                        onClick={() => context.activateMePage()}
                         style={meHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Me</span>
                         <BsPerson
                             onMouseEnter={() => setMeHover(true)}
@@ -32,6 +36,7 @@ const Navbar = () => {
                             onMouseEnter={() => setSkillsHover(true)}
                             onMouseLeave={() => setSkillsHover(false)}
                             className={s.navbar__list__icon}
+                            onClick={() => context.activateSkillsPage()}
                             style={skillsHover ? {color: '#18d5f2'} : null}
                         />
                     </li>
