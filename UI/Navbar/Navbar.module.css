@@ -1,5 +1,5 @@
 .navbar {
-    width: 60px;
+    width: 70px;
     height: 100vh;
     border-right: 1px solid black;
     background-color: #222;
@@ -18,7 +18,7 @@
 .navbar__list {
     list-style: none;
     position: absolute;
-    right: 10px;
+    right: 13px;
 }
 
 .navbar__list__icon {
@@ -47,5 +47,31 @@
         font-size: 100%;
         right: 50px;
         padding-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .navbar {
+        width: 100vw;
+        height: 70px;
+        border-bottom: 1px solid black;
+    }
+
+    .navbar:hover {
+        width: 100%;
+    }
+
+    .navbar__list {
+        padding-top: 50px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .linkSpan {
+        display: none;
     }
 }

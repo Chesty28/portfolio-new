@@ -1,6 +1,7 @@
 .indexPage {
     height: 100vh;
     width: 100vw;
+    position: absolute;
 }
 
 .header {
@@ -67,27 +68,32 @@
 }
 
 @media only screen and (max-width: 660px) {
-    .indexPage {
-        display: flex;
-    }
-
-    .hero {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .header {
-        position: static;
-        margin-top: 50px;
-        font-size: 65px;
+        font-size: 50px;
     }
 
     .logo {
-        position: static;
         font-size: 200px;
-        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .header {
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .header {
+        width: 220px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    .logo {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
     }
 }

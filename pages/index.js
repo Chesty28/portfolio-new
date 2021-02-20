@@ -15,7 +15,7 @@ const index = () => {
       </Head>
       <IndexPage />
       <MePage />
-      <SkillsPage />
+      
     </>
   );
 };
