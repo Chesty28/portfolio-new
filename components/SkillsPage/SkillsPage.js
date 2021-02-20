@@ -3,6 +3,8 @@ import { Context } from '../../context/context';
 
 import Navbar from '../../UI/Navbar/Navbar';
 
+import s from './SkillsPage.module.css';
+
 const SkillsPage = () => {
     const context = useContext(Context);
 
@@ -11,14 +13,14 @@ const SkillsPage = () => {
         height: '100vh',
         background: '#222',
         position: 'absolute',
-        transform: context.skillsPage ? 'translate(0, -100%)' : 'translate(-100%, -100%)',
+        transform: context.skillsPage ? 'translateX(0)' : 'translateX(-100%)',
         transition: 'transform 0.7s'
     };
 
     return (
         <div style={style}>
             <Navbar />
-            skills page
+            <img className={s.skillsImage} src='/skills-image.svg' />
         </div>
     );
 };

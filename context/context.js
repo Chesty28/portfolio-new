@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 export const Context = React.createContext({
+    indexPage: true,
     mePage: false,
     skillsPage: false,
     projectsPage: false,
     contactPage: false,
+    activateIndexPage: () => {},
     activateMePage: () => {},
     activateSkillsPage: () => {},
     activateProjectsPage: () => {},
@@ -12,12 +14,23 @@ export const Context = React.createContext({
 });
 
 const ContextProvider = props => {
+    // Use reducer here ...
+    const [indexPage, setIndexPage] = useState(true);
     const [mePage, setMePage] = useState(false);
     const [skillsPage, setSkillsPage] = useState(false);
     const [projectsPage, setProjectsPage] = useState(false);
     const [contactPage, setContactPage] = useState(false);
 
+    const activateIndexPage = () => {
+        setIndexPage(true);
+        setMePage(false);
+        setSkillsPage(false);
+        setProjectsPage(false);
+        setContactPage(false);
+    }
+
     const activateMePage = () => {
+        setIndexPage(false);
         setMePage(true);
         setSkillsPage(false);
         setProjectsPage(false);
@@ -25,6 +38,7 @@ const ContextProvider = props => {
     };
 
     const activateSkillsPage = () => {
+        setIndexPage(false);
         setMePage(false);
         setSkillsPage(true);
         setProjectsPage(false);
@@ -32,6 +46,7 @@ const ContextProvider = props => {
     };
 
     const activateProjectsPage = () => {
+        setIndexPage(false);
         setMePage(false);
         setSkillsPage(false);
         setProjectsPage(true);
@@ -39,6 +54,7 @@ const ContextProvider = props => {
     };
 
     const activateContactPage = () => {
+        setIndexPage(false);
         setMePage(false);
         setSkillsPage(false);
         setProjectsPage(false);
@@ -47,10 +63,12 @@ const ContextProvider = props => {
 
     return (
         <Context.Provider value={{
+            indexPage: indexPage,
             mePage: mePage,
             skillsPage: skillsPage,
             projectsPage: projectsPage,
             contactPage: contactPage,
+            activateIndexPage: activateIndexPage,
             activateMePage: activateMePage,
             activateSkillsPage: activateSkillsPage,
             activateProjectsPage: activateProjectsPage,

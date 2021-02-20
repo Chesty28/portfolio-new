@@ -31,12 +31,12 @@ const Navbar = () => {
                     <li className={s.navbar__list__item}
                         onMouseEnter={() => setSkillsHover(true)}
                         onMouseLeave={() => setSkillsHover(false)}
+                        onClick={() => context.activateSkillsPage()}
                         style={skillsHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Skills</span>
                         <BsCodeSlash
                             onMouseEnter={() => setSkillsHover(true)}
                             onMouseLeave={() => setSkillsHover(false)}
                             className={s.navbar__list__icon}
-                            onClick={() => context.activateSkillsPage()}
                             style={skillsHover ? {color: '#18d5f2'} : null}
                         />
                     </li>

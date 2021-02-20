@@ -1,0 +1,13 @@
+.copy {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    font-size: 120%;
+}
+
+@media only screen and (max-width: 890px) {
+    .copy {
+        font-size: 90%;
+    }
+}
