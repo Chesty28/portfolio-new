@@ -38,18 +38,6 @@
     font-size: 120%;
 }
 
-@media only screen and (max-width: 660px) {
-    .navbar__list__icon {
-        font-size: 150%;
-    }
-
-    .linkSpan {
-        font-size: 100%;
-        right: 50px;
-        padding-top: 2px;
-    }
-}
-
 @media only screen and (max-width: 570px) {
     .navbar {
         width: 100vw;
@@ -69,6 +57,10 @@
         justify-content: space-evenly;
         align-items: center;
         padding-left: 10px;
+    }
+
+    .navbar__list__icon {
+        font-size: 180%;
     }
 
     .linkSpan {

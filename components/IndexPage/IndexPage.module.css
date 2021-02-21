@@ -73,7 +73,7 @@
     }
 
     .logo {
-        font-size: 200px;
+        font-size: 250px;
     }
 }
 
@@ -83,7 +83,7 @@
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 450px) {
     .header {
         width: 220px;
         top: 25%;
@@ -92,8 +92,8 @@
     }
 
     .logo {
-        top: 70%;
+        top: 80%;
         left: 50%;
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, -80%);
     }
 }
