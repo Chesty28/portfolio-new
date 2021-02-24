@@ -1,0 +1,20 @@
+.span {
+    display: inline-block;
+    transition: all 0.4s;
+    cursor: default;
+}
+
+.an1:hover {
+    color: #EB3D80;
+    transform: scaleY(1.2);
+}
+
+.an2:hover {
+    color: #18d5f2;
+    transform: scaleY(0.9);
+}
+
+.an3:hover {
+    color: #EB3D80;
+    transform: skewY(20deg);
+}

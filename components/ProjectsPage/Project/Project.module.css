@@ -1,0 +1,95 @@
+.projectHeaderContainer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.project {
+    width: 350px;
+    height: 350px;
+    background-color: #292929;
+    box-shadow: 2px 3px 3px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.projectMiddle {
+    margin: 0 100px;
+}
+
+.projectHeader {
+    font-size: 200%;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.projectText {
+    color: #EB3D80;
+    font-size: 150%;
+    text-align: center;
+    z-index: 8;
+}
+
+.projectText.middle {
+    color: #18D5F2;
+}
+
+.hoverMe {
+    font-size: 130%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 8;
+}
+
+.flexbox {
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.hoverbox {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #262626;
+    z-index: 9;
+    transition: height 0.7s ease-in;
+    display: flex;
+    justify-content: center;
+}
+
+.project:hover .hoverbox {
+    height: 100%;
+    cursor: pointer;
+}
+
+.hoverboxText {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 130%;   
+    z-index: 6;
+}
+
+.hoverboxImage {
+    filter: grayscale(100%);
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 200px;
+    opacity: 1;
+    margin-top: 20px;
+    z-index: 7;
+}

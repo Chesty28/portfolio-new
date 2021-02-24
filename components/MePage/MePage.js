@@ -3,9 +3,9 @@ import { Context } from '../../context/context';
 
 import Navbar from '../../UI/Navbar/Navbar';
 import Copyright from '../../UI/Copyright/Copyright';
+import InteractiveText from '../../UI/InteractiveText/InteractiveText';
 
 import s from './MePage.module.css';
-import ans from '../IndexPage/IndexPage.module.css';
 
 const MePage = () => {
 	const context = useContext(Context);
@@ -23,14 +23,7 @@ const MePage = () => {
 		<div className={s.mePage} style={style}>
 			<Navbar />
 			<h2 className={s.sectionHeader}>
-				<span className={[ans.span, ans.an1].join(' ')}>A</span>
-				<span className={[ans.span, ans.an2].join(' ')}>b</span>
-				<span className={[ans.span, ans.an3].join(' ')}>o</span>
-				<span className={[ans.span, ans.an2].join(' ')}>u</span>
-				<span className={[ans.span, ans.an1].join(' ')}>t</span>
-				<span> </span>
-				<span className={[ans.span, ans.an2].join(' ')}>m</span>
-				<span className={[ans.span, ans.an3].join(' ')}>e</span>
+				<InteractiveText type='meHeader' />
 			</h2>
 
 			<div className={s.meTextContainer}>

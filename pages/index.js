@@ -4,6 +4,7 @@ import Head from 'next/head';
 import IndexPage from '../components/IndexPage/IndexPage';
 import MePage from '../components/MePage/MePage';
 import SkillsPage from '../components/SkillsPage/SkillsPage';
+import ProjectsPage from '../components/ProjectsPage/ProjectsPage';
 
 const index = () => {
   return (
@@ -16,6 +17,7 @@ const index = () => {
       <IndexPage />
       <MePage />
       <SkillsPage />
+      <ProjectsPage />
     </>
   );
 };

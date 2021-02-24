@@ -43,6 +43,7 @@ const Navbar = () => {
                     <li className={s.navbar__list__item}
                         onMouseEnter={() => setProjectsHover(true)}
                         onMouseLeave={() => setProjectsHover(false)}
+                        onClick={() => context.activateProjectsPage()}
                         style={projectsHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Projects</span>
                         <CgWebsite
                             onMouseEnter={() => setProjectsHover(true)}

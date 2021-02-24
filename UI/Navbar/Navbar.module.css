@@ -38,6 +38,12 @@
     font-size: 120%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .navbar:hover {
+        width: 70px;
+    }
+}
+
 @media only screen and (max-width: 570px) {
     .navbar {
         width: 100vw;
