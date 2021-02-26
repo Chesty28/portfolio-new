@@ -93,3 +93,35 @@
     margin-top: 20px;
     z-index: 7;
 }
+
+@media only screen and (max-width: 1230px) {
+    .project {
+        width: 500px;
+        height: 120px;
+        margin-top: 50px;
+    }
+
+    .projectHeaderContainer {
+        height: 80px;
+        background-color: #292929;
+    }
+
+    .projectText {
+        font-size: 120%;
+        margin-top: 40px;
+    }
+
+    .hoverMe {
+        display: none;
+    }
+        
+    .hoverbox {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .project {
+        width: 350px;
+    }
+}

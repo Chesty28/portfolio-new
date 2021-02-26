@@ -1,16 +1,32 @@
-.projectsPage {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
-
 .projectsContainer {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 80px;
     bottom: 0;
-    right: 0;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.clickMe {
+    display: none;
+    font-size: 130%;
+}
+
+@media only screen and (max-width: 1230px) {
+    .projectsContainer {
+        flex-direction: column;
+    }
+
+    .clickMe {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .projectsContainer {
+        left: 0;
+        right: 0;
+    }
 }

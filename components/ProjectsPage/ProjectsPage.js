@@ -12,7 +12,7 @@ const ProjectsPage = () => {
 
 	const style = {
 		width: '100vw',
-		height: '100vh',
+		minHeight: '100vh',
 		background: '#222',
 		position: 'absolute',
 		transform: context.projectsPage ? 'translateX(0)' : 'translateX(-100%)',
@@ -24,6 +24,7 @@ const ProjectsPage = () => {
 			<Navbar />
 
 			<div className={s.projectsContainer}>
+				<p className={s.clickMe}>Click tabs below to visit the pages</p>
 				<Project 
 					header='Old Portfolio' 
 					image='/portfolio-screen.png' 
