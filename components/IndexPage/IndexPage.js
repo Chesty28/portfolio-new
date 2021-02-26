@@ -22,7 +22,7 @@ const IndexPage = () => {
             <Navbar />
             <div className={s.hero}>
                 <h1 className={s.header}>
-                    <InteractiveText type='header'/>
+                    <InteractiveText type='header' />
                 </h1>
                 <p className={s.logo}>P</p>
             </div>

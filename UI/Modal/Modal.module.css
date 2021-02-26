@@ -1,0 +1,33 @@
+.modal {
+    width: 570px;
+    height: 300px;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalText {
+    font-size: 170%;
+}
+
+.modalButton {
+    width: 100px;
+    height: 40px;
+    font-size: 140%;
+    margin-top: 80px;
+    background-color: #EB3D80;
+    border: none;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+}
+
+.modalButton:hover {
+    background-color: #c22f67;
+}

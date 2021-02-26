@@ -24,15 +24,27 @@ const ProjectsPage = () => {
 			<Navbar />
 
 			<div className={s.projectsContainer}>
-				<Project header='Old Portfolio' image='/portfolio-screen.png'>
+				<Project 
+					header='Old Portfolio' 
+					image='/portfolio-screen.png' 
+					available={true}
+				>
 					My old portfolio website
 				</Project>
 
-				<Project header='School Done' middle>
+				<Project 
+					header='School Done' 
+					middle 
+					available={false}
+					image='/schooldone-screen.png'
+				>
 					My own startup for students
 				</Project>
 
-				<Project header='Golden Rose'>
+				<Project 
+					header='Golden Rose' 
+					available={false}
+					image='/goldenrose-screen.png'>
 					Placeholder website for beauty studio
 				</Project>
 			</div>
