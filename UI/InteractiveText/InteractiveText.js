@@ -40,6 +40,21 @@ const InteractiveText = (props) => {
 				<span className={[s.span, s.an3].join(' ')}>e</span>
 			</div>
 		);
+	} else if (props.type === 'contactHeader') {
+		return (
+			<div>
+				<span className={[s.span, s.an1].join(' ')}>C</span>
+				<span className={[s.span, s.an2].join(' ')}>o</span>
+				<span className={[s.span, s.an3].join(' ')}>n</span>
+				<span className={[s.span, s.an2].join(' ')}>t</span>
+				<span className={[s.span, s.an1].join(' ')}>a</span>
+				<span className={[s.span, s.an3].join(' ')}>c</span>
+				<span className={[s.span, s.an2].join(' ')}>t</span>
+				<span> </span>
+				<span className={[s.span, s.an2].join(' ')}>m</span>
+				<span className={[s.span, s.an1].join(' ')}>e</span>
+			</div>
+		)
 	}
 };
 

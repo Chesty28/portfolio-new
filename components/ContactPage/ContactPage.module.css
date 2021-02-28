@@ -1,0 +1,117 @@
+.contactHeader {
+    font-size: 450%;
+    font-weight: 200;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+}
+
+.contactText {
+    font-size: 170%;
+    position: absolute;
+    top: 450px;
+    left: 10%;
+    width: 650px;
+}
+
+.contactForm {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    width: 850px;
+    height: 500px;
+    background-color: #292929;
+    box-shadow: 4px 4px 2px #111;
+}
+
+.inputsContainer {
+    width: 314px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.input {
+    color: #fff;
+    width: 314px;
+    height: 32px;
+    background: #333;
+    border: none;
+    font-size: 120%;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #18D5F2;
+    margin-bottom: 25px;
+}
+
+.messageArea {
+    color: #fff;
+    width: 314px;
+    height: 133px;
+    background: #333;
+    border: none;
+    font-size: 120%;
+    padding-left: 10px;
+    resize: none;
+    outline: none;
+}
+
+.contactButton {
+    width: 96px;
+    height: 32px;
+    background: #EB3D80;
+    border: none;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 120%;
+}
+
+.flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.forgetText {
+    font-size: 120%;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+}
+
+@media only screen and (max-width: 1770px) {
+    .contactHeader {
+        font-size: 300%;
+    }
+
+    .contactText {
+        font-size: 150%;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .contactForm {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contactHeader {
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contactText {
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1000px;
+    }
+}

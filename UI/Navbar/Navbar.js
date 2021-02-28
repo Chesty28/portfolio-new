@@ -55,6 +55,7 @@ const Navbar = () => {
                     <li className={s.navbar__list__item}
                         onMouseEnter={() => setContactHover(true)}
                         onMouseLeave={() => setContactHover(false)}
+                        onClick={() => context.activateContactPage()}
                         style={contactHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Contact</span>
                         <BsChatSquareDots
                             onMouseEnter={() => setContactHover(true)}
