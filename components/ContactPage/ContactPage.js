@@ -10,13 +10,13 @@ import SocialTab from './SocialTab/SocialTab';
 import s from './ContactPage.module.css';
 
 const ContactPage = () => {
-    const context = useContext(Context);
+	const context = useContext(Context);
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
 
-    const style = {
+	const style = {
 		width: '100vw',
 		height: '100vh',
 		background: '#222',
@@ -25,61 +25,73 @@ const ContactPage = () => {
 		transition: 'transform 0.7s',
 	};
 
-    const sendMessage = e => {
-        e.preventDefault();
-        
-        const emailData = { name, email, message };
+	const sendMessage = (e) => {
+		e.preventDefault();
 
-        Axios.post('URL', emailData)
-        .then(res => {
-            // LOGIC
-        })
-        .catch (err => {
-            // LOGIC
-        })
-    }
+		const emailData = { name, email, message };
 
-    return (
-        <div className={s.contactPage} style={style}>
-            <Navbar />
-            {console.log(process.env.TEST)}
-            <h2 className={s.contactHeader}>
-                <InteractiveText type='contactHeader'/>
-            </h2>
+		Axios.post('URL', emailData)
+			.then((res) => {
+				// LOGIC
+			})
+			.catch((err) => {
+				// LOGIC
+			});
+	};
 
-            <p className={s.contactText}>
-                Do you have some offer, idea or just want to ask me something?
-                Don’t hesistate to contact me right here!
-            </p>
+	return (
+		<div className={s.contactPage} style={style}>
+			<Navbar />
 
-            <form className={s.contactForm} onSubmit={e => sendMessage(e)}>
-                <SocialTab icon='linkedin' url='https://www.linkedin.com/in/petr-sudoma'/>
-                <SocialTab icon='github' url='https://github.com/Chesty28'/>
-                <SocialTab icon='facebook' url='https://www.facebook.com/petrsudoma'/>
-                <SocialTab icon='instagram' url='https://www.instagram.com/petr_sudoma'/>
+			<h2 className={s.contactHeader}>
+				<InteractiveText type='contactHeader' />
+			</h2>
 
-                <div className={s.inputsContainer}>
-                    <input type='text' placeholder='Your Name' className={[s.input, s.nameInput].join(' ')} onChange={e => setName(e.target.value)} />
-                    <div className={s.line}></div>
+			<p className={s.contactText}>
+				Do you have some offer, idea or just want to ask me something?
+				Don’t hesistate to contact me right here!
+			</p>
 
-                    <input type='email' placeholder='Your Email' className={[s.input, s.emailInput].join(' ')} onChange={e => setEmail(e.target.value)} />
-                    <div className={s.line}></div>
+			<form className={s.contactForm} onSubmit={(e) => sendMessage(e)}>
+				<SocialTab icon='linkedin' url='https://www.linkedin.com/in/petr-sudoma' />
+				<SocialTab icon='github' url='https://github.com/Chesty28' />
+				<SocialTab icon='facebook' url='https://www.facebook.com/petrsudoma' />
+				<SocialTab icon='instagram' url='https://www.instagram.com/petr_sudoma' />
 
-                    <textarea placeholder='Your Message' className={s.messageArea} onChange={e => setMessage(e.target.value)} />
+				<div className={s.inputsContainer}>
+					<input
+						type='text'
+						placeholder='Your Name'
+						className={[s.input, s.nameInput].join(' ')}
+						onChange={(e) => setName(e.target.value)}
+					/>
 
-                    <div className={s.flexbox}>
-                        <button className={s.contactButton}>SEND</button>
-                    </div>
+					<input
+						type='email'
+						placeholder='Your Email'
+						className={[s.input, s.emailInput].join(' ')}
+						onChange={(e) => setEmail(e.target.value)}
+					/>
 
-                    <p className={s.forgetText}>
-                        Don’t forget to type your valid email address :)
-                    </p>
-                </div>
-            </form>
+					<textarea
+						placeholder='Your Message'
+						className={s.messageArea}
+						onChange={(e) => setMessage(e.target.value)}
+					/>
 
-            <Copyright />
-        </div>
-    );
+					<div className={s.flexbox}>
+						<button className={s.contactButton}>SEND</button>
+					</div>
+
+					<p className={s.forgetText}>
+						Don’t forget to type your valid email address :)
+					</p>
+				</div>
+			</form>
+
+			<Copyright />
+		</div>
+	);
 };
 
 export default ContactPage;
