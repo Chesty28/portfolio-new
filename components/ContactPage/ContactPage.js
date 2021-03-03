@@ -89,15 +89,14 @@ const ContactPage = () => {
 			message: state.form.messageInput.value
 		};
 
-		Axios.post('http://localhost:5000/api/email', emailData)
+		Axios.post('https://portfolionew-email-api.herokuapp.com/api/email', emailData)
 			.then((res) => {
 				setLoading(false);
 				setModalMessage(res.data.message);
 			})
 			.catch((err) => {
 				setLoading(false);
-				console.log(err);
-				setModalMessage(err);
+				setModalMessage(err.message);
 			});
 	};
 
