@@ -17,8 +17,7 @@ const Modal = props => {
                 </div>
             </Backdrop>
             :
-            null
-}
+            null}
         </>
     )
 };
