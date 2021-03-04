@@ -16,50 +16,34 @@ const Navbar = () => {
     return (
         <nav className={s.navbar}>
 				<ul className={s.navbar__list}>
-                    <li className={s.navbar__list__item}
-                        onMouseEnter={() => setMeHover(true)}
-                        onMouseLeave={() => setMeHover(false)}
+                    <li className={[s.navbar__list__item, s.firstListItem].join(' ')}
                         onClick={() => context.activateMePage()}
                         style={meHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Me</span>
                         <BsPerson
-                            onMouseEnter={() => setMeHover(true)}
-                            onMouseLeave={() => setMeHover(false)}
-                            className={s.navbar__list__icon}
+                            className={[s.navbar__list__icon, s.personIcon].join(' ')}
                             style={meHover ? {color: '#18d5f2'} : null}
                         />
                     </li>
                     <li className={s.navbar__list__item}
-                        onMouseEnter={() => setSkillsHover(true)}
-                        onMouseLeave={() => setSkillsHover(false)}
                         onClick={() => context.activateSkillsPage()}
                         style={skillsHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Skills</span>
                         <BsCodeSlash
-                            onMouseEnter={() => setSkillsHover(true)}
-                            onMouseLeave={() => setSkillsHover(false)}
                             className={s.navbar__list__icon}
                             style={skillsHover ? {color: '#18d5f2'} : null}
                         />
                     </li>
                     <li className={s.navbar__list__item}
-                        onMouseEnter={() => setProjectsHover(true)}
-                        onMouseLeave={() => setProjectsHover(false)}
                         onClick={() => context.activateProjectsPage()}
                         style={projectsHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Projects</span>
                         <CgWebsite
-                            onMouseEnter={() => setProjectsHover(true)}
-                            onMouseLeave={() => setProjectsHover(false)}
                             className={s.navbar__list__icon}
                             style={projectsHover ? {color: '#18d5f2'} : null}
                         />
                     </li>
                     <li className={s.navbar__list__item}
-                        onMouseEnter={() => setContactHover(true)}
-                        onMouseLeave={() => setContactHover(false)}
                         onClick={() => context.activateContactPage()}
                         style={contactHover ? {color: '#18d5f2'} : {color: '#666'}}><span className={s.linkSpan}>Contact</span>
                         <BsChatSquareDots
-                            onMouseEnter={() => setContactHover(true)}
-                            onMouseLeave={() => setContactHover(false)}
                             className={s.navbar__list__icon}
                             style={contactHover ? {color: '#18d5f2'} : null}
                         />
