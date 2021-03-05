@@ -29,6 +29,7 @@ const ProjectsPage = () => {
 					header='Old Portfolio' 
 					image='/portfolio-screen.png' 
 					available={true}
+					alt='Petr Sudoma old portfolio'
 				>
 					My old portfolio website
 				</Project>
@@ -38,6 +39,7 @@ const ProjectsPage = () => {
 					middle 
 					available={false}
 					image='/schooldone-screen.png'
+					alt='School Done'
 				>
 					My own startup for students
 				</Project>
@@ -45,7 +47,9 @@ const ProjectsPage = () => {
 				<Project 
 					header='Golden Rose' 
 					available={false}
-					image='/goldenrose-screen.png'>
+					image='/goldenrose-screen.png'
+					alt='Golden Rose'
+				>
 					Placeholder website for beauty studio
 				</Project>
 			</div>

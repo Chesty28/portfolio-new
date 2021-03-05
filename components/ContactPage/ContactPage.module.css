@@ -16,7 +16,7 @@
 
 .contactForm {
     position: absolute;
-    top: 250px;
+    top: 200px;
     right: 50px;
     width: 850px;
     height: 500px;
@@ -69,6 +69,14 @@
     background: #555;
 }
 
+.pinkColor {
+    color: #EB3D80;
+}
+
+.blueColor {
+    color: #18D5F2;
+}
+
 .flexbox {
     width: 100%;
     display: flex;
@@ -85,12 +93,15 @@
 @media only screen and (max-width: 1780px) {
     .contactHeader {
         font-size: 300%;
-        top: 300px;
     }
     
     .contactText {
         font-size: 120%;
         width: 400px;
+    }
+
+    .contactText {
+        top: 400px; 
     }
 }
 

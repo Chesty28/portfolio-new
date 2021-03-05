@@ -26,7 +26,7 @@ const Project = props => {
 					<p className={s.projectHeader}>{props.header}</p>
 				</div>
 				<div className={s.hoverbox}>
-					<img className={s.hoverboxImage} src={props.image}/>
+					<img className={s.hoverboxImage} src={props.image} alt={props.alt}/>
 					<p className={s.hoverboxText}>Click for more</p>
 				</div>
 				<div className={s.flexbox}>

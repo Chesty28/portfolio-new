@@ -26,7 +26,7 @@ const MePage = () => {
 				<InteractiveText type='meHeader' />
 			</h2>
 
-			<div className={s.meTextContainer}>
+			<article className={s.meTextContainer}>
 				<p className={s.meText}>
 					<span className={s.mePinkSpan}>I am</span> 18 years and my
 					passion is IT, especially{' '}
@@ -44,7 +44,7 @@ const MePage = () => {
 					<span className={s.mePinkSpan}>I am</span> working on my own
 					startups <span className={s.meBlueSpan}>every day</span>
 				</p>
-			</div>
+			</article>
 			<div className={s.ballContainer}>
 				<div className={[s.ball, s.ball1].join(' ')}></div>
 				<div className={[s.ball, s.ball2].join(' ')}></div>

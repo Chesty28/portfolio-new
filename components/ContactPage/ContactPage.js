@@ -120,8 +120,8 @@ const ContactPage = () => {
 			</h2>
 
 			<p className={s.contactText}>
-				Do you have some offer, idea or just want to ask me something?
-				Don’t hesistate to contact me right here!
+				Do you have <span className={s.blueColor}>some offer</span>, idea or just want to ask me something?
+				Don’t hesistate to <span className={s.pinkColor}>contact me right here!</span>
 			</p>
 
 			<form className={s.contactForm} onSubmit={(e) => sendMessage(e)}>
