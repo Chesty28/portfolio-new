@@ -19,6 +19,17 @@ function MyApp({ Component, pageProps }) {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000"/>
       <meta name="msapplication-TileColor" content="#222222"/>
       <meta name="theme-color" content="#ffffff"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2Q8TGBSY0"></script>
+      <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-P2Q8TGBSY0');
+          `
+            }}
+      />
     </Head>
     <ContextProvider><Component {...pageProps} /></ContextProvider>
     </>
