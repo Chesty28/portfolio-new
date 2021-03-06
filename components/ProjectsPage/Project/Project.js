@@ -11,7 +11,7 @@ const Project = props => {
     const projectClass = props.middle ? [s.project, s.projectMiddle].join(' ') : s.project;
     const projectTextClass = props.middle ? [s.projectText, s.middle].join(' ') : s.projectText;
 
-	const clickFunction = props.available ? () => window.open('https://petrsudoma.com') : () => setActiveModal(true);
+	const clickFunction = props.url ? () => window.open(props.url) : () => setActiveModal(true);
 
 	const closeModal = () => {
 		setActiveModal(false);

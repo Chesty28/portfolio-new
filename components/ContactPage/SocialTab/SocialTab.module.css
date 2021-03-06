@@ -45,6 +45,24 @@
     margin-top: 10px;
 }
 
+@media only screen and (max-width: 880px) {
+    .linkedin.socialTab {
+        background-color: #EB3D80;
+    }
+
+    .github.socialTab {
+        background-color: #18D5F2;
+    }
+    
+    .facebook.socialTab {
+        background-color: #EB3D80;
+    }
+    
+    .instagram.socialTab {
+        background-color: #18D5F2;
+    }
+}
+
 @media only screen and (max-width: 440px) {
     .socialTab {
         left: 0;
