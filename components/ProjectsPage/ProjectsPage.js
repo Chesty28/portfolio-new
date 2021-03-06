@@ -29,7 +29,7 @@ const ProjectsPage = () => {
 					header='Old Portfolio' 
 					image='/portfolio-screen.png' 
 					alt='Petr Sudoma old portfolio'
-					url={process.env.OLDPORTFOLIO_URL}
+					url='https://portfolio2020-6a33b.web.app/'
 				>
 					My old portfolio website
 				</Project>

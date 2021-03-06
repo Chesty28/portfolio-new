@@ -1,4 +1,3 @@
-My personal website (NOT DEPLOYED YET)
+My personal website build built with Next.js and Express on backend
 
-OLD WEBSITE BELOW
-https://www.petrsudoma.com
+http://www.petrsudoma.com
