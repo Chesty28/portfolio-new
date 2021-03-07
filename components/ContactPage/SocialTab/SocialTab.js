@@ -31,9 +31,9 @@ const SocialTab = props => {
     }
 
     return (
-        <div onClick={() => window.open(props.url)} className={[s.socialTab, s[props.icon]].join(' ')}>
+        <a href={props.url} target='_blank' className={[s.socialTab, s[props.icon]].join(' ')}>
             <div className={s.socialIcon}>{icon}</div>
-        </div>
+        </a>
     );
 };
 

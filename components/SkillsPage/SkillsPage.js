@@ -36,7 +36,7 @@ const SkillsPage = () => {
     return (
         <div style={style}>
             <Navbar />
-            <img className={s.skillsImage} src={mobileImage ? '/skills-image-phone.svg' : '/skills-image.svg'} />
+            <img className={s.skillsImage} alt='skills image' src={mobileImage ? '/skills-image-phone.svg' : '/skills-image.svg'} />
             <Copyright />
         </div>
     );

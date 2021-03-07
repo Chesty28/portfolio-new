@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
       <title>Petr Šudoma</title>
       <meta charSet="utf-8" />
-      <meta name="description" content="Fullstack developer Petr Šudoma"></meta>
+      <meta name="description" content="Fullstack Web Developer Petr Šudoma. I'm using React, Express, MongoDB and other popular technologies for my development"></meta>
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito:ital,wght@0,200;0,400;1,400&display=swap" rel="stylesheet"/>
       <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"/>
